@@ -29,6 +29,7 @@ const TicketContainer = () => {
         <div className="flex h-[40%] items-center gap-5">
           <a
             className="z-50"
+            target="_blank"
             href={
               ticketData.avatar
                 ? URL.createObjectURL(ticketData.avatar)
