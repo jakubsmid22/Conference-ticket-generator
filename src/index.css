@@ -1,0 +1,22 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: Inconsolata;
+  font-display: swap;
+  src: url("./assets/fonts/Inconsolata-VariableFont_wdth,wght.ttf");
+}
+
+@theme {
+  --font-inconsolata: Inconsolata, Arial;
+  --color-neutral-0: hsl(0, 0%, 100%);
+  --color-neutral-300: hsl(252, 6%, 83%);
+  --color-neutral-500: hsl(245, 15%, 58%);
+  --color-neutral-700: hsl(245, 19%, 35%);
+  --color-neutral-900: hsl(248, 70%, 10%);
+  --color-orange-500: hsl(7, 88%, 67%);
+  --color-orange-700: hsl(7, 71%, 60%);
+}
+
+.text-gradient {
+  @apply to-neutral-0 bg-gradient-to-r from-orange-500 bg-clip-text text-transparent;
+}
