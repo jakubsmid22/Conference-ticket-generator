@@ -8,7 +8,7 @@ const TicketContainer = () => {
   const [ticketData] = useAtom(ticketDataAtom);
 
   return (
-    <div className="relative flex h-[210px] w-[450px] items-center justify-between p-6 pr-0 sm:h-[280px] sm:w-[600px]">
+    <div className="relative flex h-[165px] w-[350px] items-center justify-between p-3 sm:p-6 pr-0 sm:h-[280px] sm:w-[600px]">
       <img
         src={ticketPattern}
         alt="ticketPattern"
@@ -19,8 +19,8 @@ const TicketContainer = () => {
         <div className="flex h-[40%] items-start gap-5">
           <img src={logoMark} alt="logo-img" className="sm:w-14" />
           <div className="flex flex-col items-start gap-2 sm:gap-4">
-            <p className="text-3xl sm:text-4xl">Coding Conf</p>
-            <p className="text-neutral-500 sm:text-lg">
+            <p className="text-xl sm:text-4xl">Coding Conf</p>
+            <p className="text-neutral-500 text-sm sm:text-lg">
               Jan 31, 2025 / Austin, TX
             </p>
           </div>
@@ -41,7 +41,7 @@ const TicketContainer = () => {
                 ticketData.avatar ? URL.createObjectURL(ticketData.avatar) : ""
               }
               alt="avatar-img"
-              className="h-16 w-16 rounded-md sm:h-20 sm:w-20"
+              className="h-10 w-10 rounded-md sm:h-20 sm:w-20"
             />
           </a>
           <div className="flex h-full flex-col items-start justify-between py-2">
@@ -52,7 +52,7 @@ const TicketContainer = () => {
               className="z-50 flex gap-1 text-neutral-500"
             >
               <img src={githubIcon} alt="github-icon" />
-              <p className="text-lg">{ticketData.githubUsername}</p>
+              <p className="sm:text-lg">{ticketData.githubUsername}</p>
             </a>
           </div>
         </div>
